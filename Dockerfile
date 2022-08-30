@@ -11,7 +11,7 @@ ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_RUN_DIR /var/www/html
 
 COPY index.html /var/www/html/
-COPY containerandcat*.jpg /var/www/html/
+COPY cat.jpg /var/www/html/
 
 ENTRYPOINT ["/usr/sbin/apache2"]
 CMD ["-D", "FOREGROUND"]
